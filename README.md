@@ -1,5 +1,8 @@
 # AsyncTask
 
+[![Gem Version](https://badge.fury.io/rb/async_task.svg)](http://badge.fury.io/rb/async_task)
+[![License](https://img.shields.io/badge/license-Apache-green.svg?style=flat)](https://github.com/square/async_task/blob/master/LICENSE)
+
 Lightweight, asynchronous, and database-backed execution of singleton methods.
 
 This gem provides generators and mixins to queue up tasks in database transactions to be performed
