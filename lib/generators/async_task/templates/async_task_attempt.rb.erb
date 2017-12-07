@@ -1,0 +1,10 @@
+class AsyncTask::Attempt < <% if Rails::VERSION::STRING >= '5' %>ApplicationRecord<% else %>ActiveRecord::Base<% end %>
+  include AsyncTask::BaseAttempt
+
+  # @override
+  #
+  # This method is used by AsyncTask::Base when #perform! fails.
+  def handle_perform_error(error)
+    Raven.capture_exception(error)
+  end
+end

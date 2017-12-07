@@ -1,0 +1,19 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Ignore all logfiles and tempfiles
+*.log
+*.swp
+
+# Ignore all sqlite3 files
+*.sqlite3
+
+# rspec failure tracking
+.rspec_status
