@@ -107,7 +107,7 @@ AsyncTask::Attempt.create!(
 
 ## Cautionary Situations When Using This Gem
 
-### Task Idempotence
+### Idempotence
 
 The `target`, `method_name`, and `method_args` should be idempotent because the
 `AsyncTask::AttemptBatchJob` could schedule multiple `AsyncTask::AttemptJob`s if the job queue is
